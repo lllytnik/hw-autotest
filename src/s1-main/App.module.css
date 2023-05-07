@@ -1,11 +1,31 @@
 .App {
     --header_height: 60px;
+    width: 100%;
+    padding: 0 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hw {
 
+    padding: 30px 0 25px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
 }
 
 .hwTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
 
+}
+
+.messageWpar {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
