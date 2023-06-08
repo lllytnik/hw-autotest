@@ -13,17 +13,26 @@ export const pureAddUser = (
     setName: React.Dispatch<React.SetStateAction<string>>,
     addUserCallback: (name: string) => void) => {
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
-    name.trim() === ''
-        ? setError('Ошибка! Введите имя!')
-        : (addUserCallback(name), setName(''), setError(''));
+    if (name.trim() === '') {
+        setError('Ошибка! Введите имя!')
+    } else {
+        addUserCallback(name)
+        setName('')
+        setError('')
+    }
+
 }
 
 export const pureOnBlur = (name: string, setError: React.Dispatch<React.SetStateAction<string>>) => { // если имя пустое - показать ошибку
-    name.trim() === '' && setError('Ошибка! Введите имя!');
+    if (name.trim() === '') {
+        setError('Ошибка! Введите имя!')
+    }
 }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => { // если нажата кнопка Enter - добавить
-    e.key === 'Enter' ? addUser() : null;
+    if (e.key === 'Enter') {
+        addUser()
+    }
 }
 
 // более простой и понятный для новичков
