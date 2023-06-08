@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/hw-autotest/static/css/main.e38d246d.css",
-    "main.js": "/hw-autotest/static/js/main.0959f73b.js",
+    "main.css": "/hw-autotest/static/css/main.03c65714.css",
+    "main.js": "/hw-autotest/static/js/main.d6a9eb9a.js",
     "static/js/787.66cb4309.chunk.js": "/hw-autotest/static/js/787.66cb4309.chunk.js",
+    "static/media/checked.svg": "/hw-autotest/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/hw-autotest/index.html",
-    "main.e38d246d.css.map": "/hw-autotest/static/css/main.e38d246d.css.map",
-    "main.0959f73b.js.map": "/hw-autotest/static/js/main.0959f73b.js.map",
+    "main.03c65714.css.map": "/hw-autotest/static/css/main.03c65714.css.map",
+    "main.d6a9eb9a.js.map": "/hw-autotest/static/js/main.d6a9eb9a.js.map",
     "787.66cb4309.chunk.js.map": "/hw-autotest/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e38d246d.css",
-    "static/js/main.0959f73b.js"
+    "static/css/main.03c65714.css",
+    "static/js/main.d6a9eb9a.js"
   ]
 }
