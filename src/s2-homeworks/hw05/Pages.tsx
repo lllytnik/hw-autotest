@@ -14,20 +14,27 @@ export const PATH = {
 function Pages() {
     return (
         <div>
+            {/*Routes выбирает первый подходящий роут*/}
             <Routes>
-                <Route path="/" element={<Navigate to={PATH.PRE_JUNIOR} />} />
+                <Route path={"/"} element={<PreJunior/>}/>
 
-                {/* Route for /pre-junior */}
-                <Route path={PATH.PRE_JUNIOR} element={<PreJunior />} />
 
-                {/* Route for /junior */}
-                <Route path={PATH.JUNIOR} element={<Junior />} />
+                <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
+                <Route path={PATH.JUNIOR} element={<Junior/>}/>
+                <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus/>}/>
+                <Route path={"/*"} element={<Error404/>}/>
 
-                {/* Route for /junior-plus */}
-                <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus />} />
+                {/*роутинг будут писать студенты*/}
+                {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
+                {/*<Route ...*/}
 
-                {/* Catch-all route for non-existent pages */}
-                <Route path="*" element={<Error404 />} />
+                {/*роуты для /pre-junior, /junior, /junior-plus*/}
+                {/*<Route ...*/}
+                {/*<Route ...*/}
+                {/*<Route ...*/}
+
+                {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
+                {/*<Route ...*/}
             </Routes>
         </div>
     )
