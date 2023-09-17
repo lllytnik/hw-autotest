@@ -15,7 +15,6 @@ function Pages() {
     return (
         <div>
             <Routes>
-                {/* Redirect from '/' to '/pre-junior' */}
                 <Route path="/" element={<Navigate to={PATH.PRE_JUNIOR} />} />
 
                 {/* Route for /pre-junior */}
